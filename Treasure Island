@@ -22,27 +22,22 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
-
-#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
-
-#Write your code below this line 👇
-
 print("To find the treasure waiting for you, you need to make tough decitions!")
 
-left_or_right = input("So now, let's start with the first step! \n -There is a two-way route in front of you! \n -Do you go right or left? \n")
+left_or_right = input("So now, let's start with the first step! \n -There is a two-way route in front of you! \n -Do you go right or left? \n").lower()
 
 if left_or_right == "right":
   print("\nGreat choice! you survived the first challange!")
   print(" -So now, walk through the right route. \n -There's a coast and a sea. \n -There's a station for a boat overthere in the right side of the beach. \n -Every 10 hours that boat takes people to the treasure island...")
 
   
-  wait_or_swim = input(" -Here is the next challange! One boat just left. Do you wait for the next boat or swim? \n")
+  wait_or_swim = input(" -Here is the next challange! One boat just left. Do you wait for the next boat or swim? \n").lower()
   
   if wait_or_swim == "wait" :
     print("\nGreat choice! you survived the second challange too!")
     print(" -You got to the island after a few hours! \n -Now you need to find the biggest palm tree in the island! \n -There are three different boxes under the tree! Only one of them has the treasure!!! ")
 
-    which_box = input(" -You have the chance to choose only one box! which one do you open? silver,  golden or black? \n")
+    which_box = input(" -You have the chance to choose only one box! which one do you open? silver,  golden or black? \n").lower()
 
     if which_box == "black" :
       print("***CONGRATULATIONS*** You found the treasure! Unbelivable!")
